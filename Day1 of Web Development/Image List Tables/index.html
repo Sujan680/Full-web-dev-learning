@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image List Table in Html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>List examples in html</h1>
+    <h2>Welcome to GEeksforGeeks learning</h2>
+    <p>List of available courses</p>
+    <ul>
+        <li>Data Strucute and Algorithm</li>
+        <li>Web Technology</li>
+        <li>Appitude and Logical Reasoning</li>
+        <li>Programming Languages</li>
+    </ul>
+
+    <h4>Data Structures topics</h4>
+    <ol>
+        <li>Array</li>
+        <li>Linked List</li>
+        <li>Stacks</li>
+        <li>Queues</li>
+        <li>Trees</li>
+        <li>Graphs</li>
+    </ol>
+
+    <h1>Learning Web Development</h1>
+    <ol style="list-style-type: upper-roman;">
+        <li>Background Skills</li>
+            <ol style="list-style-type: upper-alpha;">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+            </ol>
+        <li>HTML</li>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Minimal Page</li>
+            <li>Headings</li>
+            <li>Tags</li>
+            <li>Lists</li>
+            <ol style="list-style-type: lower-roman;">
+                <li>Unordered</li>
+                <li>Ordered</li>
+                <li>Definition</li>
+                <li>Nested</li>
+            </ol>
+            <li>Links</li>
+            <ol style="list-style-type: lower-roman;">
+                <li>Absolute</li>
+                <li>Relative</li>
+            </ol>
+            <li>Images</li>
+        </ol>
+        <li>CSS</li>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Anatomy</li>
+            <li>Basic Selectors</li>
+            <ol>
+                <li>Element</li>
+                <li>Class</li>
+                <li>ID</li>
+                <li>Group</li>
+            </ol>
+            <li>The DOM</li>
+            <li>Advanced Selectors</li>
+            <li>Box Model</li>
+        </ol>
+        <li>Programming</li>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Python</li>
+            <li>Javascript</li>
+        </ol>
+        <li>Database</li>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Flat File</li>
+            <li>Relational</li>
+        </ol>
+    </ol>
+
+    <h1>Html definition list</h1>
+    <dl>
+        <dt>
+            HTML
+        </dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quas quod voluptatibus ipsum autem odit a numquam delectus voluptatum reiciendis?</dd>
+
+        <dt>CSS</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quibusdam repellat sequi aspernatur architecto, cupiditate eum quas voluptates ad debitis eaque magni porro. Corrupti quo ea nihil, molestias commodi natus?</dd>
+
+        <dt>Javascript</dt>
+        <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur maiores quibusdam et nostrum necessitatibus, tenetur a, dolorem velit cupiditate aliquam magnam sit deserunt veritatis.</dd>
+    </dl>
+
+
+    <h3>Image Examples</h3>
+    <img width="50%" src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=400" alt="food image">
+    <figure>
+        <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=400" alt="FOOD img">
+    </figure>
+
+
+    <h2>Table examples</h2>
+
+    <table>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+
+    <h2>Second Table in html</h2>
+    <table>
+        <caption>Table in HTML</caption>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                Tuesday
+            </td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td rowspan="1/2">Xpath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td rowspan="2">XSL transormation</td>
+        </tr>
+       
+        <tr>
+            <td>2:00 a.m.</td>
+            <td>5:00 p.m.</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td>XSL formatting Objects</td>
+        </tr>
+
+    </table>
+</body>
+</html>
