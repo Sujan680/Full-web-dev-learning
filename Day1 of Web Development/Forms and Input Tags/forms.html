@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+</head>
+
+<body>
+    <h1>Form to apply for the Sigma Web Development</h1>
+    <form action="">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your name">
+        </div>
+        <div>
+            <label for="gender">Your Gender:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="sports">Choose Your Fav-sports:</label>
+            <input type="checkbox" id="football" name="football">
+            <label for="football">Football</label>
+            <input type="checkbox" id="basketball" name="basketball">
+            <label for="basketball">Basketball</label>
+            <input type="checkbox" id="volleyball" name="volleyball">
+            <label for="volleyball">Volleyball</label>
+            <input type="checkbox" id="futsal" name="futsal">
+            <label for="football">Futsal</label>
+        </div>
+        <div>
+            <textarea name="comment" id="comment" rows="4" cols="100">Enter your comment here...</textarea>
+        </div>
+        <div>
+            <Label>Choose a country:</Label>
+            <select name="country" id="country" size="2">
+                <option value="1">Nepal</option>
+                <option value="2">India</option>
+                <option value="3">China</option>
+                <option value="4">Australia</option>
+                <option value="5">Canada</option>
+                <option value="6">USA</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>About My-Family</legend>
+                <label for="fname">Father's First name:</label>
+                <input type="text" id="fname" name="fname" value="John">
+                <label for="lname">Father's Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="fname">Mother's First name:</label>
+                <input type="text" id="fname" name="fname" value="Sun">
+                <label for="lname">Mother's Last name:</label>
+                <input type="text" id="lname" name="lname" value="Magar"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </div>
+        <div>
+            <label for="list">Browsers List:</label>
+            <input list="browsers" placeholder="Edge">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
