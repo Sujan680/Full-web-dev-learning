@@ -1,0 +1,38 @@
+/* To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}: */
+
+
+.note {
+    font-size: 120%;
+    color: red;
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.main {
+    text-align: center;
+}
+
+.heading {
+    color: blue;
+    font-size: 26px;
+}
+
+.para {
+    color: brown;
+    padding: 20px;
+}
+
+
+/* The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}. */
+
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
