@@ -1,0 +1,19 @@
+h1 {
+    background-color: brown;
+}
+p {
+    background-color: red;
+    padding: 4px;
+}
+
+div {
+    background-color: blue;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    background-color: rgb(10, 10, 131);
+    color: wheat;
+}
