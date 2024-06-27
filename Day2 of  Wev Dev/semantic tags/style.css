@@ -1,0 +1,70 @@
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.nav >ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-articles {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.main-articles > h3, .article {
+    margin: 10px;
+    padding: 5px;
+  }
+
+.article{
+    background: white;
+}
+
+.article h3,p {
+   margin: 4px;
+   font-size: 80%;
+}
+
+section {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+aside{
+    width: 20%;
+    height: 270px;
+    top: 0;
+    left: 0;
+    margin: 0 20px 10px 0;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+.myfigure {
+    display: flex;
+    overflow: hidden;
+    background-color: lightpink;
+}
+
+figure > img {
+   width: 100px;
+    border-radius: 5px;
+}
