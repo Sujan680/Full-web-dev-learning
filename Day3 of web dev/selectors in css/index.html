@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in css</title>
+    <style>
+        /* universal selector in css */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* element selector e.g. */
+        /* div {
+            background-color: red;
+            padding: 10px;
+        } */
+        /* class selector */
+        .red {
+            background-color: red;
+            padding: 10px;
+        }
+
+        .red>h3 {
+            color: blue;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        /* id selector */
+        #blue {
+            background-color: blue;
+            padding: 20px;
+        }
+
+        /* Child selectors */
+        #blue>p {
+            color: brown;
+            background-color: red;
+            padding: 10px;
+        }
+
+        /* Descendent child */
+        #blue h2 {
+            color: yellow;
+        }
+
+        #blue p {
+            color: white;
+        }
+
+        /* pseudo selector in css */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: violet;
+        }
+
+        p:first-child {
+            background-color: blue;
+            padding: 3px;
+        }
+
+        p:nth-child(3) {
+            background-color: rebeccapurple;
+            padding: 5px;
+        }
+
+        p:nth-last-child(3) {
+            background-color: rgb(245, 245, 81);
+            padding: 4px;
+        }
+
+        p:nth-last-child(1) {
+            background-color: red;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        I am a div.
+        <h3>I ma child of a div</h3>
+    </div>
+    <div id="blue">
+        I am another div
+        <p>I am direct child selector in a div.</p>
+        <article>
+            <h2>Sujan</h2>
+            <p>I am descedent child selector of a div and direct child of article element.</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.instagram.com">Go to Instagram</a>
+
+    <div class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+        <p>I am third</p>
+        <p>I am fourth</p>
+    </div>
+</body>
+
+</html>
