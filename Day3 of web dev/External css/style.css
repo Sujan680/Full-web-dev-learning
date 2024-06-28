@@ -1,0 +1,24 @@
+h2 {
+    background-color: blue;
+    padding: 10px;
+}
+
+h4 {
+    background-color: red;
+    padding: 10px;
+}
+
+p{
+    background-color: brown;
+    padding: 10px;
+}
+
+.list ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    background-color: red;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
