@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media in HTml</title>
+    <style>
+        .videos {
+            display: flex;
+            gap: 10px;
+            background-color: antiquewhite;
+            padding: 20px;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        video {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .audio {
+            background-color: aqua;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Videos of the Day:</h2>
+    <div class="videos">
+        <video src="video.mp4" controls></video>
+        <video src="video.mp4" controls></video>
+        <video src="video.mp4" controls></video>
+        <video src="video.mp4" controls></video>
+    </div>
+    <h2>Some of best audios of the day</h2>
+    <div class="audio">
+        <audio src="1.mp3" controls></audio>
+        <audio src="2.mp3" controls></audio>
+        <audio src="3.mp3" controls></audio>
+    </div>
+</body>
+
+</html>
