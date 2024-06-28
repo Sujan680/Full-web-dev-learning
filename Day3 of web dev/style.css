@@ -1,0 +1,37 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  div {
+   
+    font-size: 20px;
+  }
+
+  span {
+    color: rgb(39, 29, 220);
+  }
+  h1.center {
+    text-align: right;
+    color: blue;
+  }
+
+  p.center {
+    text-align: center;
+    color: red;
+  }
