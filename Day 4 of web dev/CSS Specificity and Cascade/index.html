@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade in CSS</title>
+    <style>
+
+        /*Priority: inline style > id > class or attribute > element selector > universal */
+        .yellow {
+            color: yellow;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        h1 {
+            color: blanchedalmond !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: darkblue;" class="yellow red blue">CSS Specificity</h1>
+    </div>
+</body>
+</html>
