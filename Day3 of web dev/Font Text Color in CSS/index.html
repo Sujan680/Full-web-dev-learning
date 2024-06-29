@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOnt color and text in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Trirong:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h2 {
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        p{
+            font-family: "Bodoni Moda", Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            font-family:  "Trirong";
+        }
+        .text > h1{
+            /* text-decoration: overline; */
+            text-decoration: dotted;
+            /* text-transform: uppercase; */
+            text-overflow: clip;
+            text-shadow: 2px 2px;
+        }
+
+        .text p {
+            text-shadow: 2px 2px red;
+        }
+
+        span {
+            /* color: blue; */
+            color: white;
+            background: linear-gradient(#8a4141,#1273d5);
+            padding: 10px;
+        }
+
+        .colors {
+            background: linear-gradient(blue,red);
+            padding: 10px;
+            border: 2px solid black;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        .colors >h1 {
+            background-color: whitesmoke;
+            padding-inline: 10px;
+            color: #45ae6a;
+        }
+        .colors >p {
+            background-color: #25b320;
+            padding: 10px;
+            border: 3px solid blue;
+        }
+
+        article {
+            background-color: rgba(red,green,blue,0.5);
+            border: 3px solid whitesmoke;
+            padding: 10px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Font examples -->
+     <h2>Font</h2>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, fuga.</p>
+
+     <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio vitae similique officia in reiciendis enim nesciunt odio voluptatibus repudiandae?
+     </div>
+
+     <div class="text">
+        <h1>Hi i'm heading </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, iusto.</p>
+     </div>
+
+     <!-- COlors in css -->
+
+     <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, mollitia.
+     </span>
+
+     <div class="colors">
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus omnis quaerat modi ipsam consequatur doloribus ipsum obcaecati, impedit cumque deleniti.</p>
+
+        <article>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consectetur reiciendis, quia consequatur voluptate exercitationem voluptatum quas qui non laboriosam!
+        </article>
+     </div>
+</body>
+</html>
