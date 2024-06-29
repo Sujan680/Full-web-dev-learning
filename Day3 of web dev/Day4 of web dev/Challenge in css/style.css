@@ -1,0 +1,15 @@
+body {
+    background: linear-gradient(red, gray);
+    background-repeat: no-repeat;
+}
+div > p:first-child{
+    background-color: yellow;
+    color: red;
+    padding: 5px;
+}
+
+div >p{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
