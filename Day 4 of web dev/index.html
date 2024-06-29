@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing in CSS</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 20vh;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 2rem;
+            background-color: aquamarine;
+        }
+
+        .container {
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            width: 60vw;
+            font-size: 10px;
+            background-color: red;
+            color: white;
+        }
+
+        .container p,h3,div {
+            font-size: 2em;
+        }
+
+        .container .second-container {
+            width: 70%;
+            border: 2px solid black;
+        }
+
+        .second-container >p{
+            width: 70%;
+            border: 2px solid blue;
+        }
+
+
+
+        h4 {
+            font-size: 5vmin;
+            border: 2px solid red;
+        }
+
+        .units {
+            background-color: red;
+            color: yellow;
+            border: 3px solid blue;
+            padding: 20px;
+            font-size: 2em;
+            width: 300px;
+            max-width: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora in, et sunt at enim recusandae nemo, iusto
+        incidunt odio amet excepturi, beatae voluptates expedita perspiciatis assumenda necessitatibus? Culpa, voluptas
+        libero?
+    </div>
+
+    <div class="container">
+        <h3>Helllo I am sujan magar</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa delectus maxime molestias velit autem
+            fuga cum, quisquam impedit atque laudantium itaque obcaecati dolores ab mollitia doloribus. Eum debitis,
+            quia soluta molestias impedit quis, quos quam cupiditate quas excepturi quod veniam eius numquam at, totam
+            hic iste quidem harum?</p>
+            <div class="second-container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde nam blanditiis ipsa magnam, laudantium consectetur autem consequuntur quidem reiciendis architecto placeat odio dicta ab maiores officiis laboriosam error ex!
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, delectus?</p>
+            </div>
+
+    </div>
+
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur numquam repudiandae molestias, deserunt
+        provident quod earum iure. Fugit reiciendis quos odit, placeat fuga exercitationem aliquam nobis itaque numquam
+        expedita hic sequi ab blanditiis minima dolorem ipsam ipsa in odio tempore laboriosam unde aliquid. In magnam
+        nulla sint totam sunt blanditiis itaque aut excepturi quae hic. Nam neque iste laboriosam fugit laudantium
+        aspernatur doloremque ab vitae magnam ex, harum recusandae, at asperiores numquam sit mollitia corporis
+        obcaecati quas officia sapiente ipsam architecto fugiat quae id! Quae quis, vero recusandae non animi, ipsam,
+        eum inventore earum labore reiciendis autem. Recusandae, quas alias?</h4>
+
+
+
+    <div class="units">
+        em Relative to the font-size of the element (2em means 2 times the size of the current font)
+        ex Relative to the x-height of the current font (rarely used)
+        ch Relative to width of the "0" (zero)
+        rem Relative to font-size of the root element
+        vw Relative to 1% of the width of the viewport*
+        vh Relative to 1% of the height of the viewport*
+        vmin Relative to 1% of viewport's* smaller dimension
+        vmax Relative to 1% of viewport's* larger dimension
+        % Relative to the parent element
+    </div>
+</body>
+
+</html>
