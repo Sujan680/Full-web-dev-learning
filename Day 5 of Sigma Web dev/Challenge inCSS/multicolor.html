@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color:blue;
+            --primary:green;
+            --secondary:red;
+            --tertiary:lightpink;
+        }
+
+        .nav ul{
+            display: flex;
+            background-color: var(--tertiary);
+            padding: 20px;
+            gap: 15px;
+        }
+
+        ul li{
+            list-style: none;
+        }
+        li:first-child{
+            color: var(--color);
+        }
+        li:nth-child(2){
+            color: var(--primary);
+        }
+        li:nth-child(3){
+            --black:#8ec344;
+            color: var(--black);
+        }
+        li:nth-child(4){
+            color: yellow;
+        }
+        li:last-child{
+            color: brown;
+        }
+        li:nth-last-child(2){
+            color: #75a248;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Sign Up</li>
+            <li>Blog</li>
+            <li>Cart</li>
+        </ul>
+    </div>
+</body>
+</html>
