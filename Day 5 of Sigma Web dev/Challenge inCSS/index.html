@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-design{
+            
+            width: 45vw;
+            /* height: 80vh; */
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .card {
+            border: 3px solid #1a5a19;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        
+
+        .card img {
+            padding: 10px;
+            width: 40vw;
+            height: 40vh;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .btn-2 button {
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 10px;
+           
+        }
+
+        .card h2{
+            font-weight: 600;
+            margin: 5px;
+        }
+        .card p{
+            padding: 20px;
+            text-align: justify;
+        }
+
+        button{
+            padding: 8px;
+            margin: 10px auto;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: wheat;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-design">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fHww" alt="nature image">
+            <div class="btn-2">
+                <button>Nature</button>
+                <button>Lake</button>
+            </div>
+            <h2>Lago di Braies</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis eveniet necessitatibus nihil itaque quis eos quibusdam ipsa illo laudantium quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, velit.</p>
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+</html>
