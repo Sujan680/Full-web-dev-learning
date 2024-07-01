@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: darkslategray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow-x: hidden;
+        }
+        .nav {
+            background: linear-gradient(blue, red);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            color: wheat;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+        .nav img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .section{
+            background-color: rgb(58, 121, 161);
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(105, 48, 84);
+            width: 25vw;
+            height: 40vh;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img{
+            /* margin-top: 40px; */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; 
+        }
+
+        .box h3 {
+            font-family: cursive;
+            padding: 5px;
+            color: wheat;
+        }
+        .box p{
+           font-size: 14px;
+           text-align: center;
+           color:white;
+           font-family: cursive;
+        }
+
+        .btn{
+            text-align: center;
+            padding: 10px;
+            margin-top :20px ;
+           
+        }
+
+        .btn button{
+            padding: 20px;
+            border-radius: 20px;
+            outline-style: none;
+            background-color: blueviolet;
+            color: blanchedalmond;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .footer{
+            margin-left: 20px;
+            background-color: #a91e1e;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer h4 {
+            padding: 20px;
+            font-family: cursive;
+            color: whitesmoke;
+        }
+        .footer p{
+            padding: 10px;
+            text-align: center;
+        }
+
+        .circle{
+            background-color: white;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="https://plus.unsplash.com/premium_vector-1715633803609-9bb98babab6f?dpr=1&h=367&w=352&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="">
+            <ul>
+                <li>Home</li>
+                <li>Signup</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="box">
+                <img src="https://plus.unsplash.com/premium_vector-1715632451847-35e488befa69?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wzfHx8ZW58MHx8fHx8" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quod quas explicabo ratione debitis a! Rerum quod architecto cumque modi magnam distinctio veniam vitae laborum?</p>
+            </div>
+            <div class="box">
+                <img src="https://plus.unsplash.com/premium_vector-1716891118602-df06f137d0c2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" alt="">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quod quas explicabo ratione debitis a! Rerum quod architecto cumque modi magnam distinctio veniam vitae laborum?</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button>Welcome to the Sigma Web Development Tuotorial</button>
+        </div>
+
+        <div class="circle">
+           Hi, it's me Sujan Magar from the top of the world...
+        </div>
+
+        <div class="footer">
+            <h4>Copyright &copy; 2024. Sujan Magar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque labore illo inventore tenetur quidem ad porro fugit quibusdam minima!</p>
+        </div>
+    </div>
+</body>
+</html>
