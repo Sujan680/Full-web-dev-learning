@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: yellow;
+        } */
+
+        /* .box::first-line{
+            color: blue;
+        } */
+
+
+        /* .boxes *{
+            border: 2px solid blue;
+            color: yellowgreen;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* attribute selectors */
+        /* [data-color="primary"]{
+            margin-top: 40px;
+        /* } */ *
+
+     .box:nth-child(even){
+            background-color: red;
+            padding: 10px;
+        }
+
+        .box:nth-child(odd){
+            background-color: yellow;
+            padding: 10px;
+        } 
+
+
+        /* Pseudo-elements */
+        /* .boxes::before{
+            content: "Sujan Magar";
+            color: Blue;
+        }
+
+        .boxes::after{
+            content: "Magar is good boy";
+            color: aqua;
+        }
+
+        ::selection{
+            background-color: black;
+            color: whitesmoke;
+        } */
+
+        input::placeholder{
+            color: green;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I'm Box</div>
+        <div data-color="primary" class="box">Hey I'm Box</div>
+        <div class="box">Hey I'm Box</div>
+        <div class="box">Hey I'm Box</div>
+        <div class="box">Hey I'm Box</div>
+        <div class="box">Hey I'm Box</div>
+        <div class="box">Hey I'm Box</div>
+
+        Name:<input type="text" placeholder="Enter Your Nmae">
+    </div>
+</body>
+</html>
