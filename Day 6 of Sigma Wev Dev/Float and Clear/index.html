@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear in css</title>
+    <style>
+        .container {
+            border: 3px solid blue;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 200px;
+            float: left;
+            border-radius: 20px;
+        }
+
+        .cards {
+            border: 2px solid;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .cards img {
+            float: left;
+        }
+
+        .card:nth-child(3) {
+            background: red;
+            clear: left;
+        }
+
+        .div1 {
+            /* float: left; */
+            float: right;
+            padding: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div2 {
+            padding: 10px;
+            border: 3px solid red;
+        }
+
+
+        .div3 {
+            border: 2px solid red;
+            /* float: left; */
+            float: right;
+        }
+
+        .div4{
+            border: 2px solid blue;
+            /* clear: left; */
+            clear: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://plus.unsplash.com/premium_vector-1715633803609-9bb98babab6f?dpr=1&h=367&w=352&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus quia modi voluptate molestias
+            nesciunt, perspiciatis sequi consequuntur, ipsam vel similique, excepturi exercitationem impedit odio! Culpa
+            ipsum quos soluta quisquam sit facere necessitatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rem nostrum laborum nobis non sunt quos! Et
+            error distinctio facilis.</p>
+    </div>
+
+    <div class="cards">
+        <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWFsfGVufDB8fDB8fHww"
+            alt="" width="200" height="300">
+
+        <div class="card">Card1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit hic aut corporis
+            voluptate ratione nam, dignissimos sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            quam magni autem optio maiores tempora, eaque enim, quidem consequuntur quibusdam eos explicabo molestiae
+            reiciendis. Beatae tempore sequi animi ut dolorum, perspiciatis quas debitis velit eligendi, dolorem libero.
+            Est eligendi aliquam tenetur quasi. Nobis earum asperiores quibusdam vero ea voluptatem magni sed labore
+            atque quae aliquid commodi praesentium, deleniti vel voluptatum pariatur necessitatibus optio non, provident
+            impedit esse id incidunt magnam explicabo? Voluptatum, quae? Commodi harum obcaecati optio! Voluptatibus
+            corrupti libero possimus harum minus vel asperiores, ab ipsum! Ratione quia tenetur sed repellendus, sint
+            reiciendis libero? Minima </div>
+
+        <div class="card">Card2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis nemo
+            assumenda, veniam voluptatum cumque explicabo qui expedita accusamus aperiam? Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Quia libero commodi voluptatum laborum adipisci vel veniam, sunt cum rem a
+            atque, id hic minus eum cupiditate, non at illum incidunt! Numquam id ullam repudiandae? Quae itaque placeat
+            obcaecati sed, voluptatibus error quia aut assumenda facilis, distinctio rerum quo excepturi vel! Nulla amet
+            nesciunt, inventore deleniti magni, id iure autem iusto odit fugit placeat similique, exercitationem at.
+            Unde alias quis veniam libero tenetur vel delectus corporis assumenda facere vero corrupti voluptatum vitae
+            quaerat ipsa debitis inventore quidem saepe voluptatem, quisquam labore nisi cupiditate! Rerum sapiente,
+            laboriosam inventore repellat minima, nisi impedit, temporibus ipsum doloribus ducimus accusantium nesciunt
+            officiis. Quaerat, numquam perferendis? Eaque possimus dicta voluptatem corrupti amet doloremque repellendus
+            minus adipisci iure voluptates, doloribus deserunt ullam magnam nisi cumque quam praesentium, eligendi nam
+            qui consequatur assumenda, veritatis sunt voluptatum quis. Autem fuga explicabo veniam iusto cum ducimus,
+            obcaecati maxime debitis omnis, quis voluptate velit. Nemo officia quis beatae quaerat officiis! Quia
+            facilis ut cum autem corporis tenetur dolore accusamus est blanditiis vel quas cumque recusandae voluptatum
+            impedit cupiditate aliquam libero omnis et corrupti magnam, aliquid accusantium harum sunt! Consequatur
+            minima veritatis laboriosam aperiam, nobis repudiandae, cumque reprehenderit quaerat deserunt distinctio
+            sit!</div>
+
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi mollitia odio dolorum
+            ducimus aut culpa, delectus eveniet, dignissimos dolorem nemo libero id maiores dolor incidunt quia, vitae
+            rerum hic. Illum expedita veniam inventore voluptatibus, nemo quaerat sint dolor deserunt, cumque laudantium
+            quisquam ratione laborum. Non, libero. Magnam, asperiores cum eveniet quos dignissimos ratione. Alias
+            praesentium culpa animi ab modi earum nesciunt illum. Corporis, rem? Laboriosam placeat ipsam mollitia ad,
+            facilis doloremque sequi commodi dolor, accusantium, praesentium numquam quos similique aut recusandae.
+            Voluptatibus natus sint velit facilis, fugiat numquam eligendi quas eum laboriosam modi repudiandae eaque
+            qui molestias tempora repellat ut! Caard3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            natus ex, necessitatibus dolorum neque pariatur? Maxime distinctio quos nobis necessitatibus facilis minima
+            quis placeat laboriosam vel cupiditate unde, libero harum incidunt nulla nisi corrupti reprehenderit natus
+            modi numquam, reiciendis illo ipsum esse nam voluptatum. Culpa cumque ab error fuga rem laudantium,
+            blanditiis, ad corrupti quasi nemo inventore harum accusamus, cupiditate quas porro debitis ullam quaerat.
+            Adipisci velit tempora expedita eligendi necessitatibus, repellat nam facere laborum vitae explicabo enim ad
+            excepturi blanditiis, deserunt placeat in unde temporibus delectus culpa nisi? Sed omnis amet iusto
+            necessitatibus ratione culpa voluptatem consectetur odit! Optio?</div>
+    </div>
+
+            <h2>Without clear</h2>
+            <div class="div1">div1</div>
+            <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left,
+                the text in div2 flows around div1.</div>
+
+            <h2>With clear</h2>
+            <div class="div3">div3</div>
+            <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears
+            elements floated to the left. You can also clear "right" and "both".</div>
+</body>
+
+</html>
