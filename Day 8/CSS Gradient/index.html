@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grdient</title>
+    <style>
+        .grad1 {
+            /* background-color: red; */
+            text-align: center;
+            height: 200px;
+            background-image: linear-gradient(red,yellow);
+        }
+        .grad2 {
+            text-align: center;
+            color: white;
+            height: 200px;
+            background-image: linear-gradient(to right,blue,black);
+        }
+        .grad3{
+            text-align: center;
+            color: white;
+            height: 200px;
+            background-image: linear-gradient(black, red, yellow, blue, brown, cyan,black);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1">
+        Hi am gradient from top to bottom
+    </div>
+
+    <div class="grad2">
+        Hi am gradient from left to right
+    </div>
+
+    <div class="grad3">
+        Hi am multiple colors stops
+    </div>
+</body>
+</html>
