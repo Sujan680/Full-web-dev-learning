@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            background-color: rgb(51, 59, 59);
+            height: 50vh;
+            width: 30vw;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 34px;
+            height: 45px;
+            /* animation-name: sujanAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-delay: 1s;
+            animation-timing-function: cubic-bezier(0.21, 0.83, 0, 1.21);
+            animation-direction: linear; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: sujanAnimation 3s ease-in 2,
+                        sujan2 4s ease-in-out 2s 2;
+
+        }
+
+        @keyframes sujanAnimation {
+            from {
+                background-color: yellow;
+            }
+
+            to {
+                background-color: red;
+                transform: translateX(600px);
+            }
+        }
+        @keyframes sujan2 {
+            0%{transform: rotate(50deg);}
+            20%{transform: rotate(100deg);}
+            50%{transform: rotate(150deg);}
+            75%{transform: rotate(200deg);}
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
