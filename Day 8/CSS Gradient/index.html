@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,30 @@
             /* background-color: red; */
             text-align: center;
             height: 200px;
-            background-image: linear-gradient(red,yellow);
+            background-image: linear-gradient(red, yellow);
         }
+
         .grad2 {
             text-align: center;
             color: white;
             height: 200px;
-            background-image: linear-gradient(to right,blue,black);
+            background-image: linear-gradient(to right, blue, black);
         }
-        .grad3{
+
+        .grad3 {
             text-align: center;
             color: white;
             height: 200px;
-            background-image: linear-gradient(black, red, yellow, blue, brown, cyan,black);
+            background-image: linear-gradient(black, red, yellow, blue, brown, cyan, black);
+        }
+
+        .grad4 {
+            height: 300px;
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
         }
     </style>
 </head>
+
 <body>
     <div class="grad1">
         Hi am gradient from top to bottom
@@ -37,5 +46,9 @@
     <div class="grad3">
         Hi am multiple colors stops
     </div>
+    <div class="grad4">
+        Hi am multiple colors stops
+    </div>
 </body>
+
 </html>
