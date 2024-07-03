@@ -23,9 +23,55 @@
             transition-delay: 1s; */
             transition: all 3s ease-in 1s;
         }
-        .translate{
-            transform: translateX(20vw) translateY(10vh);
+
+        .translate {
+            transform: translateX(20vw) translateY(10vh) scale(2);
             background-color: blueviolet;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* transition: width 2s; */
+            transition: width 2s, height 4s;
+            transition-delay: 1s;
+        }
+
+        .item:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+
+        #div1 {
+            transition-timing-function: linear;
+        }
+
+        #div2 {
+            transition-timing-function: ease;
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+        div:hover{
+            width: 400px;
         }
     </style>
 </head>
@@ -35,7 +81,20 @@
         <div class="box translate">
 
         </div>
+
     </div>
+
+    <div class="item">
+
+    </div>
+
+    <h2>Trsnsition-timing-fucntion</h2>
+
+    <div id="div1">linear</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
 </body>
 
 </html>
