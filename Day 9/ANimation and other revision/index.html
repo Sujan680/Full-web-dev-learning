@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <style>
+        .container {
+            border: 1px solid black;
+        }
+
+        .box {
+            width: 100px;
+            text-align: center;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation: sujan1 6s ;
+        }
+
+        @keyframes sujan1 {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+
+        }
+
+         /* @keyframes sujan { */
+            /* from{
+              
+                background-color: blue;
+            }
+            to{
+                /* transform: translateX(600px); */
+        /* background-color: yellow; */
+        /* } */
+        /* } */ 
+
+       .div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: sujan3 3s  forwards;
+       }
+       @keyframes sujan3 {
+        0%{
+            
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+        25%{
+            background-color: yellow;
+            top: 0;
+            left: 300px;
+        }
+        50%{
+            background-color: blue;
+            top: 200px;
+            left: 300px;
+        }
+        75%{
+            background-color: green;
+            left: 0;
+            top: 200px;
+        }
+        100%{
+            background-color: red;
+            top: 0px;
+            left: 0;
+        }
+       }
+
+       img{
+        width: 200px;
+        height: 200px;
+        /* object-fit: cover; image will be clipped to fit within the given dimension.
+        /* object-fit: contain; */ /*here image will be fit within the dimension by maintaining the aspect ratio of the image by resizing the image */
+        /* object-fit: fill ;  here image may be stretched or squized to  fit in the given dimension  */
+
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Hello</div>
+    </div>
+
+    <div class="div">
+
+    </div>
+    <h2>Image</h2>
+    <img src="https://www.w3schools.com/css/paris.jpg" alt="" height="300" width="400">
+</body>
+
+</html>
