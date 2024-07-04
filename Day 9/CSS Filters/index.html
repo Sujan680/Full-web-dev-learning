@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS filter</title>
+    <style>
+        /* img{
+            filter: blur(0.9px);
+        } */
+
+        /* .img1{
+            filter: brightness(190%);
+        } */
+         .img1{
+            filter: contrast(20%);
+            filter: drop-shadow(10px 26px 20px rgb(44, 44, 102));
+         }
+
+         .img2{
+            filter: sepia(100%);
+            /* filter:grayscale(100%); */
+            filter: invert(1);
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1635422423496-cc7a8316c6a2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D" alt="">
+        <img class="img1" src="https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFufGVufDB8fDB8fHww" alt="">
+        <img class="img2" src="https://plus.unsplash.com/premium_photo-1674854858248-8987c02e74cf?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fHww" alt="">
+    </div>
+</body>
+</html>
