@@ -258,7 +258,8 @@ nav{
 
 footer{
     display: flex;
-    justify-content: space-between;
+    font-size: 20px;
+    justify-content: space-around;
     align-items: center;
     color: #fff;
     background-color: #131921;
