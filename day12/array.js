@@ -1,4 +1,4 @@
-const myArray = ['apple', 'banana', 'mango', 'orange'];
+// const myArray = ['apple', 'banana', 'mango', 'orange'];
 
 // console.log(myArray);
 
@@ -28,7 +28,7 @@ const myArray = ['apple', 'banana', 'mango', 'orange'];
 //     console.log(i);
 //  }
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits);
 //  console.log(fruits.splice(1,2,'Sujan','Magar'));
 
@@ -56,20 +56,54 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 //(Non primitive) A deep copy of an object is a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you can be assured you're not causing the other object to change too.
 
-let object = {
-    name:"sujan",
-    age:9,
-    city:"ktm"
-}
-let obj1 =object;
-obj1.address="pokhara";
-console.log(object);
-console.log(obj1);
+// let object = {
+//     name:"sujan",
+//     age:9,
+//     city:"ktm"
+// }
+// let obj1 =object;
+// obj1.address="pokhara";
+// console.log(object);
+// console.log(obj1);
 
-let name = "This is the best gift";
-let nam2 = name;
-// nam2= "sujan";
+// let name = "This is the best gift";
+// let nam2 = name;
+// // nam2= "sujan";
 
-console.log(nam2);
-console.log(name);
-console.log(nam2);
+// console.log(nam2);
+// console.log(name);
+// console.log(nam2);
+
+
+//  Arrays revision
+
+// const myheroes = ["sujan", "santosh", "ravi", "ram"];
+
+// const dcheroes = ["sperman", "batman","flash"];
+
+// console.log(dcheroes.push(myheroes));
+// console.log(dcheroes);
+
+// let heroes = myheroes.concat(dcheroes)
+// console.log(heroes);
+
+// const allheros = [...dcheroes, ...myheroes]
+
+// console.log(allheros);
+
+
+const numbers = [1,2,3,4, [3,6], [0,9,[2,4]]];
+
+const another_array = numbers.flat(2)
+console.log(another_array);
+
+
+console.log(Array.isArray("sujanmagar"));
+console.log(Array.from("sujanmagar"));
+console.log(Array.from({"key":"sujan"}));
+
+let x=12;
+let y=3;
+let z= 4;
+
+console.log(Array.of(x,y,z)); // make array from the existing set of values 
