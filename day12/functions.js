@@ -40,3 +40,26 @@ function myFunction(p1, p2) {
 //   console.log(loginUserMessage("SUjan"));
 console.log(loginUserMessage());
 
+function calculateCartPrice(...num1){
+    return  num1
+}
+
+console.log(calculateCartPrice(2,5,8));
+
+
+const myNewArray = [200, 3000, 400]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,300,400]));
+
+const myObject = {
+    name: "sujan",
+    age: 32
+}
+function myObject1(obj1){
+    return `My ${obj1.name} is and I am ${obj1.age} year old`
+}
+console.log(myObject1(myObject));
