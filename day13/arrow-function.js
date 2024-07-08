@@ -36,3 +36,6 @@ console.log(addtwo(3,2));
 // const diftwo = (num1, num2) => num1 -num2;
 const diftwo = (num1, num2) => (num1 -num2);
 console.log(diftwo(9,4));
+
+// (a,b) => a + b;
+// console.log((6,7));
