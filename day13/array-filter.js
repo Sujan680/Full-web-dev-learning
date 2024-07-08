@@ -30,12 +30,15 @@ const users = [
     {
         name:"dipesh",
         age:20,
+    },
+    {
+        name: "Sundevi",
+        age: 9
     }
 ]
 
 const isAgeGreater = users.filter(item => item.age > 16);
 console.log(isAgeGreater);
-
 
 const nubmers1 = [1,2,3,4,5,3,,1,2,4,8,0,9];
 
