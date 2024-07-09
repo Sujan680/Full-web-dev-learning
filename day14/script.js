@@ -43,8 +43,38 @@ console.log("Hello wolrd");
 // cont.firstElementChild.style.backgroundColor = "blue"
 // 'blue'
 
-// parent node 
+// parent node
 // cont.firstElementChild.parentElement
 // <div class=​"container">​…​</div>​
 // cont.firstElementChild.parentElement.style.background = 'yellow'
 
+document.body.firstElementChild.childNodes;
+
+document.body.firstElementChild.childNodes;
+
+document.body.firstElementChild.children;
+
+// siblings prev / next 
+
+// document.body.firstElementChild.children[0]
+
+// document.body.firstElementChild.children[1]
+// <div class=​"box">​2​</div>​
+
+// document.body.firstElementChild.children[1]
+// <div class=​"box">​2​</div>​
+
+// document.body.firstElementChild.children[2]
+// <div class=​"box">​3​</div>​
+
+// document.body.firstElementChild.children[3]
+// <div class=​"box">​4​</div>​
+
+// document.body.firstElementChild.children[4]
+// <div class=​"box" style=​"background-color:​ green;​">​5​</div>​
+
+// document.body.firstElementChild.children[4].previousElementSibling
+// <div class=​"box">​4​</div>​
+
+// document.body.firstElementChild.children[2].nextElementSibling
+// <div class=​"box">​4​</div>​
