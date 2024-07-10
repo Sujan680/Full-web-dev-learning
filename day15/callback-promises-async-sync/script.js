@@ -240,3 +240,18 @@ function api(){
 async function getWeatherData(){
     await api();
 }
+
+// this is IIFE
+// ( async function (){
+//     await api();
+//     await api();
+// } () )
+
+
+
+
+// IIFE:Immediately Invoked function Expression
+
+(function () {
+    //code
+} ())
