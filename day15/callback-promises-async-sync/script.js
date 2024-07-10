@@ -127,6 +127,16 @@ function getData(dataId, getNextData){
 // script.js:121 Success
 
 
+// async-await*********for the above code
+async function getAllData(){
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    await getData(4);
+}
+
+
+
 // const getPromise = () => {
 //     return new Promise((resolve, reject) => {
 //         console.log("I am a Promise");
@@ -206,3 +216,27 @@ function getData(dataId, getNextData){
 //     console.log(res);
 //   });
 // });
+
+
+
+// Async- Await
+
+// async function always return a promise
+// await pauses the execution of its surrounding async function until the promise is settled...
+
+// async function hello(){
+//     console.log("hello");
+// }
+
+function api(){
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log("Weather data");
+            resolve(200)
+        }, 3000)
+    })
+}
+
+async function getWeatherData(){
+    await api();
+}
