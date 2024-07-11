@@ -24,9 +24,10 @@
     </div>
 
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>COntact</li>
+        <li class="items">Home</li>
+        <li class="items">About</li>
+        <li class="items">COntact</li>
+        <li class="items">footer</li>
     </ul>
 
     <script>
@@ -115,6 +116,52 @@
 
     // list.innerHTML = "SUjan"
     // 'SUjan'
+
+    //  document.querySelectorAll("li")
+    // NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+
+    // const templist = document.querySelectorAll("li")
+   
+    // templist
+    // NodeList(3) [li, li, li]
+
+    // templist[0].style.color = "blue"
+   
+    // const myH1 = document.querySelectorAll("h1")
+  
+    // myH1
+    // NodeList [h1#title.heading]
+
+    // templist
+    // NodeList(3) [li, li, li]
+   
+    // templist.forEach((l) => {
+    //     l.style.backgroundColor = "white"
+    // })
+
+    //  document.getElementsByClassName("items")
+    // HTMLCollection(4) [li.items, li.items, li.items, li.items]
+
+    //**********htmlcollection should be converted to array*****
+
+    // const temp = document.getElementsByClassName("items")
+    
+    // temp
+    // HTMLCollection(4) [li.items, li.items, li.items, li.items]
+    
+        // *****converting HTMLCollection to Array******
+    // Array.from(temp)
+    // (4) [li.items, li.items, li.items, li.items]0: li.items1: li.items2: li.items3: li.itemslength: 4[[Prototype]]: Array(0)
+
+    // const myArr = Array.from(temp)
+   
+    // myArr
+    // (4) [li.items, li.items, li.items, li.items]
+
+    // myArr.forEach((li) => {
+    //     li.style.color = "yellow"
+    // })
+
     
     </script>
   </body>
