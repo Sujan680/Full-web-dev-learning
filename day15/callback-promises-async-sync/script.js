@@ -16,7 +16,7 @@
 // console.log("FOur");
 // console.log("FIve");
 
-// // Callback : is a function passed as argument to another function
+// // Callback : is a function passed as argument to another function*************************
 
 // function sum(a,b){
 //     console.log(a+b);
@@ -26,7 +26,7 @@
 //     sumCallback(a,b)
 // }
 
-// calculator(4,4,sum);
+// calculator(4,4,sum); // sum as a callack function , remember not use () in callback like sum()...
 
 // function add(a,b){
 //     return a+b;
@@ -47,13 +47,13 @@
 
 // (a,b) => a* b;
 // setTimeout(() => {
-//     console.log(" The value is", (1,2));
+//     console.log(" The value is", (1,2)); // this is also callback (1,2)
 // },4000)
 
 // const hello = () => console.log("hello world");
-// setTimeout(hello, 2000)
+// setTimeout(hello, 2000) // this is also callback with asynchronous
 
-// callback hell
+//****************** */ callback hell********************
 
 // function getData(dataId, getNextData){
 //     setTimeout( () => {
@@ -64,7 +64,7 @@
 //     }, 2000)
 // }
 
-// callback hell forming a pyramid structure
+// callback hell forming a pyramid structure which will be difficult to understand to promise is used instead for this*****************
 // getData(1, () => {
 //     getData(2, () => {
 //         getData(3, () =>{
@@ -91,7 +91,7 @@
 // let promise = new Promise( (resolve,reject) => {
 //     console.log("I am a Promise");
 //     resolve("Hi");
-// })
+// })  // this is an simple eg of promise 
 
 function getData(dataId, getNextData){
      return new Promise((resolve, reject) => {
@@ -255,3 +255,27 @@ async function getWeatherData(){
 (function () {
     //code
 } ())
+
+// e,g
+function myDisplayer(some){
+    console.log("Some value", some);
+    return new Promise((res,rej) =>{
+      setTimeout(()=> {
+        let x = 0;
+        if(x==0){
+            res("Ok")
+        }else{
+            rej("Error")
+        }
+      }, 3000)
+    });
+}
+
+myDisplayer(12).then((res) => {
+    console.log(res);
+    myDisplayer(34).then((res) => {
+        console.log(res);
+    })
+}).catch((err) => {
+    console.log(err);
+})
