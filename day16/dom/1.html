@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Dom learning</title>
+    <style>
+      body {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-black">
+      <h1 id="title" class="heading">
+        DOM learning on chai aur code
+        <span style="display: none"> and on Youtbue </span>
+      </h1>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+      <h2>Lorem, ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>COntact</li>
+    </ul>
+
+    <script>
+    //   document.getElementById("title");
+    //   <h1 id=​"title" class=​"heading">​DOM learning on chai aur code​</h1>​
+   
+    //   document.getElementById("title").id
+    //   'title'
+   
+    //   document.getElementById("title").className
+    //   'heading'
+   
+    //   document.getElementById("title").getAttribute('id')
+    //   'title'
+  
+    //   document.getElementById("title").getAttribute('class')
+    //   'heading'
+  
+    //   document.getElementById("title").setAttribute('class', 'test heading')
+    //   undefined
+  
+    //   const title = document.getElementById("title")
+    
+    //   title
+    //   <h1 id=​"title" class=​"test heading">​DOM learning on chai aur code​</h1>​
+    //   title.style.backgroundColor = "red"
+    
+    //   title.style.padding = "20px"
+
+    // title.textContent
+    //   'DOM learning on chai aur code'
+
+    //   title.innerHTML
+    //   'DOM learning on chai aur code'
+
+    //   title.innerText
+    //   'DOM learning on chai aur code'
+
+    // diff bet innerText, innerHTML and textContent
+
+    //     title.innerHTML
+    // '\n        DOM learning on chai aur code\n <span style="display: none"> and on Youtbue </span>\n      '
+    
+    // title.textContent
+    // '\n DOM learning on chai aur code\n  and on Youtbue \n '
+    
+    // title.innerText
+    // 'DOM learning on chai aur code'
+
+    //  document.querySelector("h2")
+    // <h2>​Lorem ipsum dolor sit.​</h2>​
+
+    // document.querySelector(".heading")
+    // <h1 id=​"title" class=​"heading">​…​</h1>​
+
+    // document.querySelector("#title")
+    // <h1 id=​"title" class=​"heading">​…​</h1>​
+   
+    // document.querySelector("h2:first-child")
+
+    // document.querySelector("ul")
+    // <ul>​…​</ul>​
+
+    // const myList = document.querySelector("ul")
+    
+    // myList
+    // <ul>​…​</ul>​
+
+    // myList.querySelector("li")
+    // <li>​…​</li>​::marker​"Home"</li>​
+
+    // myList.innerText
+    // 'Home\nAbout\nCOntact'
+
+    // myList.querySelector("li").innerText
+    // 'Home'
+
+    // const list = myList.querySelector("li")
+    // undefined
+
+    // list.innerHTML
+    // 'Home'
+
+    // list.innerText
+    // 'Home'
+
+    // list.innerHTML = "SUjan"
+    // 'SUjan'
+    
+    </script>
+  </body>
+</html>
