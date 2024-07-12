@@ -23,11 +23,11 @@ form.addEventListener('submit', function(e)  {
     const wguide = document.querySelector("#weight-guide")
     // console.log( wguide.children);
     if(bmi < 18.6){
-        wguide.children[1].innerHTML = `Under weight`
+        wguide.children[1].innerHTML = `You are Under weight`
     }else if(bmi > 18.6 && bmi < 24.9 ) {
-        wguide.children[2].innerHTML = `Normal range`
+        wguide.children[2].innerHTML = `You are in Normal range`
     } else if(bmi > 24.9){
-        wguide.children[3].innerHTML = `Over weight`
+        wguide.children[3].innerHTML = ` Your Over weight`
     }
         
 }
