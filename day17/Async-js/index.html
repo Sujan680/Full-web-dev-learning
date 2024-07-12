@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async js</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        // setTimeout( function(){
+        //     console.log("Sujan Magar");
+        // }, 2000)
+
+        const changeText = function() {
+        document.querySelector("h1").innerHTML = "Hi this is Sujan"
+        }
+
+        // const sayHelo = function(){
+        //     // console.log("Hello ");
+        // }
+
+        // setTimeout(changeText, 4000);
+
+        const changeMe =  setTimeout(changeText, 4000);
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeMe)
+            console.log("Stopped");
+        })
+
+        // setInterval(sayHelo, 2000);
+    </script>
+</body>
+</html>
