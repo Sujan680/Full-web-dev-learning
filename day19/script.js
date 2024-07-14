@@ -15,5 +15,11 @@ btn.addEventListener("dblclick", () => {
 // })
 
 
-// Event bubbling in js
+// btn.addEventListener('click', () =>{
+//     document.querySelector(".box-1").innerHTML = "hi"
+// })
+
+document.querySelector('.box-1').addEventListener('mouseleave', () =>{
+    document.querySelector(".box-1").innerHTML = "hi"
+})
 
