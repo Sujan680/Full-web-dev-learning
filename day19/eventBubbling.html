@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js event bubbling</title>
+    <style>
+        .child {
+            background-color: red;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .childContainer {
+            background-color: blue;
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        .container {
+            background-color: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--e.g of event bubbling i.e when we click the child element it also calls
+     its parent element automatically and so stop this we use event propagation -->
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log("Child was clicked");
+        })
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log("ChildConteiner was clicked");
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log("Container was clicked");
+        })
+
+        const randomColor = function () {
+            const hex = "0123456789ABCDEF";
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += hex[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // let a= setInterval(() => {
+        //     document.querySelector(".childContainer").style.backgroundColor =
+        //         randomColor();
+        // }, 1000)
+
+        // clearInterval(a) // it is used to stop the continuous changing of color 
+
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.backgroundColor =
+                randomColor();
+        }, 2000)
+
+        clearTimeout(a)
+    </script>
+</body>
+
+</html>
