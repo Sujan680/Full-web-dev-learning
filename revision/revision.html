@@ -19,17 +19,66 @@
         console.log(rest);  // (4) [3, 4, 5, 6]
 
 
-        console.log('Object Destructuring ');
-        const person = {
+        // console.log('Object Destructuring ');
+        // const person = {
+        //     name: 'John',
+        //     age: 30,
+        //     city: 'New York'
+        // };
+
+        // const { name, age, city } = person;
+        // console.log(name);
+        // console.log(age);
+        // console.log(city);
+
+        console.log('Nested Destructuring');
+        const person1 = {
             name: 'John',
+            address: {
+                city: 'New York',
+                zip: '10001'
+            }
+        };
+        const { name, address: { city, zip } } = person1;
+
+        console.log(name);
+        console.log(city);
+        console.log(zip);
+
+
+        console.log("Function Parameters");
+        const displayPerson = ({ name, age }) => {
+            console.log(`Name: ${name}, Age: ${age}`);
+        };
+        const person = {
+            name: 'Sujan',
+            age: 26
+        }
+        displayPerson(person);
+
+
+        console.log("Combined Array and Object Destructuring");
+        const data = {
+            name1: 'John',
             age: 30,
-            city: 'New York'
+            hobbies: ['reading', 'traveling', 'swimming']
         };
 
-        const {name, age, city} = person;
-        console.log(name);
+        const {name1, age, hobbies: [firstHobby, secondHobby]} =  data;
+
+        console.log(name1);
         console.log(age);
-        console.log(city);
+        console.log(firstHobby);
+        console.log(secondHobby);
+
+
+        console.log('Spread Operator');
+        console.log("The spread operator makes it easy to copy and paste");
+        const array = [1,2,3,4,5,6]
+        const array1 = [...array];
+        console.log(array1);
+        // console.log(...array);
+
     </script>
 </body>
 
