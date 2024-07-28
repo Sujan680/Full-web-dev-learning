@@ -64,7 +64,7 @@
             hobbies: ['reading', 'traveling', 'swimming']
         };
 
-        const {name1, age, hobbies: [firstHobby, secondHobby]} =  data;
+        const { name1, age, hobbies: [firstHobby, secondHobby] } = data;
 
         console.log(name1);
         console.log(age);
@@ -74,11 +74,112 @@
 
         console.log('Spread Operator');
         console.log("The spread operator makes it easy to copy and paste");
-        const array = [1,2,3,4,5,6]
+        const array = [1, 2, 3, 4, 5, 6]
         const array1 = [...array];
         console.log(array1);
         // console.log(...array);
 
+        console.log("Combinig Arrays");
+        const arr1 = [1, 2, 3, 2]
+        const arr2 = [3, 4, 5]
+        const combinedArray = [...arr1, ...arr2]
+        console.log(combinedArray);
+
+        console.log("Spread in Function Calls");
+        function addNum(x, y, z) {
+            return x + y + z;
+        }
+        const num = [1, 2, 3]
+        console.log(addNum(...num));
+
+        console.log("Spread with Strings");
+
+        const str = 'SUJAN';
+        console.log([...str]);
+        console.log({ ...str });
+        console.log(...str);
+
+        console.log("Ternary Operators");
+        console.log('condition ? expressionIfTrue : expressionIfFalse;');
+        const myAge = 25;
+        const canVote = myAge >= 18 ? 'You can Vote' : "You can not Vote";
+        console.log(canVote);
+
+        // const isLoggedIn = true;
+        // const userStatus = isLoggedIn ? 'Welcome' : 'Please Login';
+        // console.log(userStatus);
+
+        const isLoggedIn = true;
+
+        const message = (
+            isLoggedIn ? 'Welcome Back' : 'Please Sign Up'
+        );
+
+        console.log(message);
+
+
+        const score = 30;
+        const grade = score >= 90 ?
+            "A+"
+            : score >= 80
+                ? "A"
+                : score >= 70
+                    ? "B+"
+                    : score >= 60
+                        ? "B"
+                        : score >= 50
+                            ? "C+"
+                            : score >= 40
+                                ? 'Pass'
+                                : "You are Fail";
+        console.log(grade);
+
+        const age1 = 15;
+        const message1 = age1 >= 18
+            ? "You are an adult."
+            : age >= 13
+                ? "You are a teenager."
+                : "You are a child.";
+
+        console.log(message1);
+
+        console.log("Promises in JS");
+        console.log("Promise is an object that represent the eventual completion or rejction of an asynchronous operation");
+        console.log('It has three states : Pending, Fulfilled and Rejected');
+        const promise = new Promise((res, rej) => {
+            const success = true;
+            if (success) {
+                res("Operation Succeeded");
+            } else {
+                rej("Operation Failed")
+            }
+        }).then((result) => {
+            console.log(result);
+        }).catch((err) => {
+            console.log(err);
+        })
+
+
+        console.log("You can chain multiple .then() calls to perform a sequence of asynchronous operations.");
+
+        const fetchData = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Data Fetched");
+            }, 1000)
+        })
+
+        fetchData.
+        then((result) => {
+            console.log(result);
+            return 'Processed data';
+        }).then((result) => {
+            console.log(result);
+            return 'Aggain processed ....';
+        }).then((result) => {
+            console.log(result);
+        }).catch((err) => {
+            console.log(err);
+        })
     </script>
 </body>
 
