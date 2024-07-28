@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Callback, callback hell, promises , promise chaining, async-await</title>
+</head>
+
+<body>
+    <h2>Hi this is the explanation of fetching API</h2>
+    <script>
+        // Using callback for fetching Data
+        function fetchData(url, callback) {
+            setTimeout(() => {
+                callback(null, `${url} data`)
+            }, 2000);
+        }
+
+        // this is callback hell which is difficult to read and understand
+        // fetchData('https://api.example.com/user', (error, userData) => {
+        //     if(error){
+        //         console.log(`Error fetching the user data`, error);
+        //     }else{
+        //         console.log("User Data:", userData);
+
+        //         fetchData('https://api.example.com/posts', (error, postsData) => {
+        //             if (error) {
+        //                 console.log("Error occured fetching data", error);
+        //             }else{
+        //                 console.log("Posts data", postsData);
+
+        //                 fetchData("https://api.example.com/comments", (error, commentsData) =>{
+        //                     if(error){
+        //                         console.log("Error occured", error);
+        //                     }else{
+        //                         console.log("Comments data", commentsData);
+        //                     }
+        //                 });
+        //             }
+        //         });
+        //     }
+        // });
+
+        // By using the promise for the above same code
+        function fetchData(url) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(`${url} data`)
+                }, 2000);
+            })
+        }
+
+        fetchData('https://api.example.com/user')
+        .then((userData) => {
+            console.log("User data:", userData);
+            return fetchData('https://api.example.com/posts')
+        })
+        .then((postsData) => {
+            console.log("Posts data", postsData);
+            return fetchData('https://api.example.com/comments')
+        })
+        .then((commentsData) => {
+            console.log("Comments data", commentsData);
+        })
+        .catch((error) => {
+            console.log("Error occured:", error);
+        })
+        .finally(() => {
+            console.log("Successfull!!!");
+        })
+
+
+        // Using the async-await methods for the same above code
+
+        async function fetchAllData() {
+            try {
+                const userData = await fetchData('https://api.example.com/user');
+                console.log("User data:", userData);
+
+                const postsData = await fetchData('https://api.example.com/user/posts');
+                console.log('Posts data:', postsData);
+
+                const commentsData = await fetchData('https://api.example.com/posts/comments');
+                console.log('Comments data:', commentsData);
+            } catch (error) {
+                console.log("Error occured", error);
+            }
+        }
+        fetchAllData();
+        
+    </script>
+</body>
+
+</html>
